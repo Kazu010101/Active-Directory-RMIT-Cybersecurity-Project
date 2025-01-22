@@ -91,6 +91,7 @@ Note that we change the DNS settings to point to Windows Server of 192.168.1.254
 ![ad13](https://github.com/user-attachments/assets/00b5eecc-9594-41be-b089-c00a04d1e6df)
 
 Step 2: Open PowerShell with administrator rights and type the following command:
+- cd\
 - Add-Computer -DomainName "XYZCompany" -Credential "Administrator"
 - Enter the domain user password > Click OK
 
@@ -105,3 +106,7 @@ Step 2: Open PowerShell with administrator rights and type the following command
 ![ad16](https://github.com/user-attachments/assets/4a47ce63-5d29-42ee-9d84-cb2d8223149f)
 
 ## Result
+
+A Windows Server VM with active Domain Controller and a Windows 10 VM which has been joined to the domain controller are created. The purpose is to simulate a real-world enterprise environment of centralized user authentication, group policy management, and security configurations which are essential for improving the security architecture of XYZ Company.
+
+The next activity is to setup the AD such as creating Organizational Units (OU), user accounts and grups with different policies within the OUs. 
