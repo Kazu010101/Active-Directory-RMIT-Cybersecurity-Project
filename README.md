@@ -56,5 +56,26 @@ We start by installing Active Directory Domain services (ADDS).
   
 ![ad7](https://github.com/user-attachments/assets/2ab75f2c-f8b7-4126-8101-724514724f52)
 
-## Result
+## Promote the Windows Server to a Domain Controller
+
+*Note: The following actions can be performed only if the user belongs to the Domain Admins group.*
+
+- Step 11: Click the notification flag next to the Manage menu > Select "Promote this server to a domain controller"
+- Step 12: On the Deployment configuration page, tick the option "Add a new forest" > fill in the domain name > click Next
+- Step 13: Provide a unique password for the Directory Services Restore Mode "(DSRM helps gain access to an environment if all domain administrator accounts lose access or in case of DC failure)" > click Next
+- Step 14: On DNS Option, click Next
+  
+![ad8](https://github.com/user-attachments/assets/07130750-65e7-411e-b307-a44a85178923)
+
+- Step 15: After the Netbios name appears > click Next
+- Step 16: Confirm the location for ADDS database files, log files and SYSVOL > click Next
+- Step 17: Review the selections > click Next
+- Step 18: Click Install and the system will be rebooted after replication has taken place.
+  
+![ad9](https://github.com/user-attachments/assets/21784e8a-8fa3-4317-8121-99ce5ec1b225)
+
+After system restart, ADDC is installed which can be noticed from the login page of the account XYZCOMPANY\Administrator. We can verify the health of the new domain controller by running dcdiag /v from the command line.
+
+![ad11](https://github.com/user-attachments/assets/22f303fc-843b-4b72-b47f-c15523779810)
+
 
