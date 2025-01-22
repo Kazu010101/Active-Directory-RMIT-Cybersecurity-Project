@@ -7,7 +7,6 @@ One of my Blue teaming labs from my [RMIT Cybersecurity Project](https://github.
 - Promote the Windows Server to a Domain Controller
 - Add a Windows 10 VM to the Domain
 
-
 ## Lab Setup
 
 - Windows 10 Pro VM Installed
@@ -80,3 +79,29 @@ After system restart, ADDC is installed which can be noticed from the login page
 
 ## Add a Windows 10 Pro VM to the Domain
 
+Turn on and log in into Windows 10 VM.
+
+Step 1: Configure the IP addressing of Windows 10 VM to:
+- IP: 192.168.1.10 /24
+- DGW: 192.168.1.1
+- DNS: 192.168.1.254
+
+Note that we change the DNS settings to point to Windows Server of 192.168.1.254 so that it can communicate with domain controller.
+
+![ad13](https://github.com/user-attachments/assets/00b5eecc-9594-41be-b089-c00a04d1e6df)
+
+Step 2: Open PowerShell with administrator rights and type the following command:
+- Add-Computer -DomainName "XYZCompany" -Credential "Administrator"
+- Enter the domain user password > Click OK
+
+![ad14](https://github.com/user-attachments/assets/a18ef29f-3bef-4f48-8cfd-ede12ab278a0)
+
+- A warning prompt will be displayed in yellow like the one below, which require restart to finish the task.
+  
+![ad15](https://github.com/user-attachments/assets/0d3dc572-3d5e-4751-8a88-64ca29ed344e)
+
+- After the restart, click on 'Other User' and notice that XYZCOMPANY domain is available to sign into.
+
+![ad16](https://github.com/user-attachments/assets/4a47ce63-5d29-42ee-9d84-cb2d8223149f)
+
+## Result
