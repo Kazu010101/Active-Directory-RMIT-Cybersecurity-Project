@@ -34,8 +34,27 @@ This can be done by opening up the server manager Dashboard > Local Server > cli
 
 ![ad4](https://github.com/user-attachments/assets/d7b24d26-051b-497a-a464-72f644d602ee)
 
+## Add a Domain Controller 
 
+We start by installing Active Directory Domain services (ADDS).
+- Step 1: Open Server Manager > Roles Summary > Add roles and features > Click Next 
+- Step 2: On the "Before you begin" screen, click Next
+- Step 3: Choose Role-based or Feature-based installation > click Next 
+- Step 4: Select the destination server on which the role will be installed "(Ensure the IP address displayed is that of the selected server)" > click Next
 
+![ad5](https://github.com/user-attachments/assets/1d11c37d-742e-4a30-bc53-943a1ea2dba2)
+
+- Step 5: Tick the roles of Active Directory Domain Services > click Next
+- Step 6: The basic features required for ADDS are selected by default > click Add Features
+- Step 7: On Select Features page > click Next
+- Step 8: On ADDS page > click Next
+  
+![ad6](https://github.com/user-attachments/assets/71a2dd15-a91f-4887-a033-e4fa84a91799)
+
+- Step 9: Confirm the installation selections > click Install
+- Step 10: After the installation finish, close the window and restart the computer.
+  
+![ad7](https://github.com/user-attachments/assets/2ab75f2c-f8b7-4126-8101-724514724f52)
 
 ## Result
 
