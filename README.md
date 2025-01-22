@@ -78,4 +78,5 @@ After system restart, ADDC is installed which can be noticed from the login page
 
 ![ad11](https://github.com/user-attachments/assets/22f303fc-843b-4b72-b47f-c15523779810)
 
+## Add a Windows 10 Pro VM to the Domain
 
