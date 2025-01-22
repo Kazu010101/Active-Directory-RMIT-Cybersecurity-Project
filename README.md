@@ -109,4 +109,4 @@ Step 2: Open PowerShell with administrator rights and type the following command
 
 A Windows Server VM with active Domain Controller and a Windows 10 VM which has been joined to the domain controller are created. The purpose is to simulate a real-world enterprise environment of centralized user authentication, group policy management, and security configurations which are essential for improving the security architecture of XYZ Company.
 
-The next activity is to setup the AD such as creating Organizational Units (OU), user accounts and grups with different policies within the OUs. 
+The next activity is to setup the AD such as creating Organizational Units (OU), user accounts and groups with different policies within the OUs. 
